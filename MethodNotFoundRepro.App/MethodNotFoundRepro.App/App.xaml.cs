@@ -1,6 +1,4 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Xamarin.Forms;
 
 namespace MethodNotFoundRepro.App
 {
@@ -15,6 +13,12 @@ namespace MethodNotFoundRepro.App
 
         protected override void OnStart()
         {
+            TestBug();
+        }
+
+        private static void TestBug()
+        {
+            System.Drawing.Color test = Color.Black;
         }
 
         protected override void OnSleep()
